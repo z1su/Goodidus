@@ -89,6 +89,9 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -385,7 +388,7 @@ label[for='new-task'] {
 
 input[type="text"] {
   margin: 0;
-  width: 100px;
+  width: 50px;
   font-size: 14px;
   line-height: 18px;
   height: 18px;
@@ -401,11 +404,15 @@ input[type="text"]:focus {
   color: #333;
 }
 
+
+
 /* New Task */
 label[for='new-task'] {
+
   display: block;
   margin: 0 0 20px;
 }
+
 input#new-task {
   float: left;
   width: 318px;
@@ -12578,3 +12585,130 @@ background:#eee;
     width: 600px;
   }
 }
+
+
+/* 테이블 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+}
+
+#container {
+  width: 1000px;
+  margin: 100px auto;
+}
+#container table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 1px;
+  background-color: rgb(218, 218, 218);
+}
+#container table thead {
+  background-color: rgb(252, 81, 3);
+  height: 65px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+#container table tbody {
+  background-color: #eee;
+  text-align: center;
+}
+#container table tbody tr:first-child td {
+  padding: 30px;
+  position: relative;
+}
+#container table tbody tr:first-child td sup {
+  font-size: 30px;
+  color: rgb(82, 82, 82);
+  position: absolute;
+  font-weight: 700;
+  top: 40px;
+}
+#container table tbody tr:first-child td sup:first-child {
+  left: 30px;
+}
+#container table tbody tr:first-child td span {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(252, 81, 3);
+}
+#container table tbody tr:first-child td sub {
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 600;
+}
+/*  */
+#container table tbody tr td {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(114, 113, 113);
+}
+
+#container table tbody tr td:first-child {
+  color: rgb(116, 116, 116);
+  font-weight: 600;
+}
+#container table tbody tr td span {
+  color: rgb(0, 0, 0);
+}
+#container table tbody tr td button {
+  all: unset;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+#container table tbody tr td button:hover {
+  background-color: rgb(252, 81, 3);
+}
+
+/* 팝업 */
+*{
+  margin:0;
+  padding:0;
+}
+a{text-decoration:none;}
+
+.wrap{
+  padding:10px;
+}
+
+.btn_open{
+  all: unset;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn_close{
+  bottom:10px;
+  z-index: 2;
+}
+.pop_wrap{position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.5); font-size:0; text-align:center;}
+.pop_wrap:after{display:inline-block; height:100%; vertical-align:middle; content:'';}
+.pop_wrap .pop_inner{
+  display:inline-block;
+  padding:20px 30px;
+  background:#fff;
+  width:400px;
+  height:600px;  
+  vertical-align:middle; font-size:15px;}
+
+  textarea {
+    width: 100%;
+    height: 3.25em;
+    border: none;
+    resize: none;
+    z-index: 1;
+  }
