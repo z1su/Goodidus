@@ -236,3 +236,8 @@ for(var j = 0; j < target.length; j++){
     this.parentNode.parentNode.style.display = 'none';
   });
 }
+
+function resize(obj) {
+  obj.style.height = '1px';
+  obj.style.height = (12 + obj.scrollHeight) + 'px';
+}
