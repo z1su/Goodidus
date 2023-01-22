@@ -11555,15 +11555,17 @@ input[type="text"]:focus {
 
 /* New Task */
 label[for='new-task'] {
-
   display: block;
   margin: 0 0 5px;
+  font-size: 12px;
 }
 
 input#new-task {
   float: left;
-  width: 230px;
+  width: 200px;
+  font-size: 13px;
 }
+
 p > button:hover {
   color: #0FC57C;
 }
@@ -11715,31 +11717,7 @@ body {
   background-color: #eee;
   text-align: center;
 }
-/* #container table tbody tr:first-child td {
-  padding: 30px;
-  position: relative;
-}
-#container table tbody tr:first-child td sup {
-  font-size: 30px;
-  color: rgb(82, 82, 82);
-  position: absolute;
-  font-weight: 700;
-  top: 40px;
-}
-#container table tbody tr:first-child td sup:first-child {
-  left: 30px;
-}
-#container table tbody tr:first-child td span {
-  font-size: 50px;
-  font-weight: 700;
-  color: rgb(252, 81, 3);
-}
-#container table tbody tr:first-child td sub {
-  font-size: 13px;
-  color: #FF8340;
-  font-weight: 600;
-} */
-/*  */
+
 #container table tbody tr td {
   padding: 20px;
   font-weight: bold;
@@ -11822,7 +11800,8 @@ a{text-decoration:none;}
 
   input::placeholder {
     /* font-weight: bold;   */
-    font-size:18px;
+    font-size:14px;
 }
+
 
   
