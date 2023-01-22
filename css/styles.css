@@ -11519,8 +11519,7 @@ button:hover {
   color: #333;
 }
 /* Heading */
-h3,
-label[for='new-task'] {
+h3, label[for='new-task'] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -11528,7 +11527,7 @@ label[for='new-task'] {
   padding: 5px 0 10px;
   margin: 0;
   width: 280px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 
@@ -11565,6 +11564,7 @@ input#new-task {
   width: 200px;
   font-size: 13px;
 }
+
 
 p > button:hover {
   color: #0FC57C;
