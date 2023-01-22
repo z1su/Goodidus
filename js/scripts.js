@@ -230,6 +230,7 @@ target[i].addEventListener('click', function(){
 });
 }
 
+
 // 팝업 닫기
 for(var j = 0; j < target.length; j++){
 btnPopClose[j].addEventListener('click', function(){
