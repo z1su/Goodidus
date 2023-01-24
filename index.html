@@ -106,21 +106,28 @@
 
             <!-- 트렌드 분석-->
             <section class="resume-section" id="트렌드 분석">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">트렌드 분석</h2>
-                    
+              <div class="resume-section-content">
+                <div class="main-container">
+                    <!-- 작품판매현황 크기 늘리기 (오른쪽에 하늘색은 일부러 공간 확인하려고 설정해둔것!! 나중에 삭제할거임)-->
+                        <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+                        <tableau-viz id="tableauViz"       
+                            src='https://public.tableau.com/views/_16744908666920/2?:language=ko-KR&publish=yes&:display_count=n&:origin=viz_share_link'    
+                            toolbar="bottom" hide-tabs>
+                        </tableau-viz>                        
                 </div>
-            </section>
-            <hr class="m-0" />
+                
+            </div>
+        </section>
+        <hr class="m-0" />
             
-            <!-- Skills-->
+            <!-- 작품 판매 현황-->
             <section class="resume-section" id="작품판매 현황">
                 <div class="resume-section-content">
                     <div class="main-container">
                         <!-- 작품판매현황 크기 늘리기 (오른쪽에 하늘색은 일부러 공간 확인하려고 설정해둔것!! 나중에 삭제할거임)-->
                             <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
                             <tableau-viz id="tableauViz"       
-                                src='https://public.tableau.com/views/__16731745123970/1?:language=ko-KR&:display_count=n&:origin=viz_share_link'      
+                                src='https://public.tableau.com/views/_16744903190070/2?:language=ko-KR&:display_count=n&:origin=viz_share_link'      
                                 toolbar="bottom" hide-tabs>
                             </tableau-viz>                        
                     </div>
@@ -140,7 +147,7 @@
 
 
                             <tableau-viz id="tableauViz"       
-                                src='https://public.tableau.com/views/__16731745123970/1?:language=ko-KR&:display_count=n&:origin=viz_share_link'      
+                                src='https://public.tableau.com/views/_16744903190070/2?:language=ko-KR&:display_count=n&:origin=viz_share_link'      
                                 toolbar="bottom" hide-tabs>
                             </tableau-viz>
                             
