@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <!-- <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet"> -->
     </head>
-    <body id="page-top" style="overflow-x: hidden ; font-family: 'IBMPlexSansKR-Regular'; font-weight:700;">
+    <body id="page-top" style="font-family: 'IBMPlexSansKR-Regular'; font-weight:700;">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -42,12 +42,11 @@
             <section class="resume-section" id="대시보드 소개">
                 <div class="resume-section-content">
                     
-                        <span class="text-primary" type="text"><p style="font-size: 35px; text-align:center; ">Goodidus 소개</p></span>
+                        <span class="text-primary" type="text"><p style="font-size: 35px; text-align:center; ">서비스 소개</p></span>
           
 
 
-                    <!-- 인사말 -->
-                  
+                    <!-- 인사말 -->                  
                     <img class="GITimg"src="images/intro.jpg" alt>   
                     
 
@@ -108,7 +107,7 @@
             <section class="resume-section" id="트렌드 분석">
               <div class="resume-section-content">
                 <div class="main-container">
-                    <!-- 작품판매현황 크기 늘리기 (오른쪽에 하늘색은 일부러 공간 확인하려고 설정해둔것!! 나중에 삭제할거임)-->
+                    <!-- 작품판매현황 크기 -->
                         <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
                         <tableau-viz id="tableauViz"       
                             src='https://public.tableau.com/views/_16744908666920/2?:language=ko-KR&publish=yes&:display_count=n&:origin=viz_share_link'    
@@ -124,7 +123,7 @@
             <section class="resume-section" id="작품판매 현황">
                 <div class="resume-section-content">
                     <div class="main-container">
-                        <!-- 작품판매현황 크기 늘리기 (오른쪽에 하늘색은 일부러 공간 확인하려고 설정해둔것!! 나중에 삭제할거임)-->
+                        <!-- 작품판매현황 크기 -->
                             <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
                             <tableau-viz id="tableauViz"       
                                 src='https://public.tableau.com/views/_16744903190070/2?:language=ko-KR&:display_count=n&:origin=viz_share_link'      
@@ -147,7 +146,7 @@
 
 
                             <tableau-viz id="tableauViz"       
-                                src='https://public.tableau.com/views/__16731745123970/1?:language=ko-KR&:display_count=n&:origin=viz_share_link'      
+                                src='https://public.tableau.com/views/_16745470829990/3?:language=ko-KR&:display_count=n&:origin=viz_share_link'      
                                 toolbar="bottom" hide-tabs>
                             </tableau-viz>
                             
@@ -157,8 +156,9 @@
                             <ul id="memo-list"></ul>
                     
                         <p>
-                          <h3>신규</h3>
-                          <section>                        
+                         
+                          <section id = "memo">      
+                            <h3>신규</h3>                  
                             <select id="select" onchange = "ops(this)" style="border: none;">
                               <option value="" selected disabled>상품명 선택</option>
                               <option value="뚱카롱 마카롱선물 J">뚱카롱 마카롱선물 J</option>
@@ -195,19 +195,39 @@
                             <label>발렌타인데이 에디션 디자인 수정 요청</label>
                             <input type="text">
                             <option></option>
-                            
+                              <div style="display: inline-block; margin: 0 5px;  float: left;">
                             <button class="edit">Edit</button>
                             <button class="delete">Delete</button>
+                            </div>
                           </li>
 
-                          <!-- <li>
+                          <li>
                             <input type="checkbox">
-                            <label2>수제쿠키 디저트 선물 K</label2>
-                            <label>수제쿠키 디저트 선물 K 재고 파악</label>
+                            <label2>뚱카롱 마카롱 세트 M</label2>
+                            <label>옵션 12번 필링 배합 변경 테스트</label>
                             <input type="text">
+                            <option></option>
+                           
+                            <div style="display: inline-block; margin: 0 5px;  float: left;">
                             <button class="edit">Edit</button>
                             <button class="delete">Delete</button>
-                          </li> -->
+                            </div>
+                          </li>
+
+
+                          <li>
+                            <input type="checkbox">
+                            <label2>레터링케이크 L</label2>
+                            <label>발렌타인데이 에디션 디자인 수정 요청</label>
+                            <input type="text">
+                            <option></option>
+                            
+                            <div style="display: inline-block; margin: 0 0px;  float:left;">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                            </div>
+                          </li>
+                          
                         </ul>
                         
                         <h3>완료</h3>
@@ -217,8 +237,10 @@
                             <label2>슈크림 선물 L</label2>
                             <label>슈크림 제조업체 변경안 피드백 보내기</label>
                             <input type="text">
+                            <div style="display: inline-block; margin: 0 5px;  float: left;">
                             <button class="edit">Edit</button>
                             <button class="delete">Delete</button>
+                          </div>
                           </li>
                         </ul>
                       </div>                                
