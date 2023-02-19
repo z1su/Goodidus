@@ -80,7 +80,6 @@ var product = document.createElement("product");
 
 
 //Each element needs modified 
-
 checkBox.type = "checkBox";
 editInput.type = "text";
 editButton.innerText = "Edit";
@@ -221,7 +220,7 @@ var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
 var targetID;
 
 // 팝업 열기
-for(var i = 0; i < target.length; i++){
+for(var i = 0; i < 3; i++){
 target[i].addEventListener('click', function(){
   targetID = this.getAttribute('href');
   console.log(targetID);
@@ -230,13 +229,24 @@ target[i].addEventListener('click', function(){
 });
 }
 
+// target[0].addEventListener('click', function(){
+//   targetID = this.getAttribute('href');
+//   console.log(targetID);
+//   document.querySelector(targetID).style.display = 'block';
+  
+// });
 
 // 팝업 닫기
-for(var j = 0; j < target.length; j++){
-btnPopClose[j].addEventListener('click', function(){
-  this.parentNode.parentNode.style.display = 'none';
-});
-}
+// for(var j = 0; j < target.length; j++){
+// btnPopClose[j].addEventListener('click', function(){
+//   this.parentNode.parentNode.style.display = 'none';
+// });
+// }
+
+
+btnPopClose[0].addEventListener('click', function(){
+    this.parentNode.parentNode.style.display = 'none';
+  });
 
 function resize(obj) {
 obj.style.height = '1px';
